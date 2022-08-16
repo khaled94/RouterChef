@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/secondary_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/headerLayout" android:background="@color/primary_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TextView android:textSize="20dp" android:textColor="@color/title_color" android:gravity="center" android:id="@+id/textView10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/connectedDevices" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+        <View android:id="@+id/view" android:background="@color/teal_700" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginTop="5dp" android:layout_below="@+id/textView10"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/msgContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/headerLayout">
+        <TextView android:textSize="14dp" android:textColor="@color/yellow_color" android:gravity="center" android:id="@+id/msgLabel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:text="@string/connectedDevicesNote" android:layout_weight="1" android:lineSpacingExtra="@dimen/lineSpacingAdd_default" android:lineSpacingMultiplier="@dimen/lineSpaceMul_default" android:textAlignment="center"/>
+        <View android:id="@+id/divider7" android:background="@color/primary_color" android:layout_width="match_parent" android:layout_height="1dp" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/tableHeaderLayout" android:background="#262727" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/msgContainer" android:textDirection="ltr" android:layoutDirection="ltr">
+        <TextView android:textSize="14dp" android:textColor="@color/orange_color" android:id="@+id/textView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="Host Name" android:layout_weight="1" android:textAlignment="center"/>
+        <View android:id="@+id/divider3" android:background="@color/primary_color" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <TextView android:textSize="14dp" android:textColor="@color/orange_color" android:id="@+id/textView11" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="Mac Address" android:layout_weight="1" android:textAlignment="center"/>
+        <View android:id="@+id/divider5" android:background="@color/primary_color" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <TextView android:textSize="14dp" android:textColor="@color/orange_color" android:id="@+id/textView13" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="IP Address" android:layout_weight="1" android:textAlignment="center" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/tableHeaderLayout">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <View android:id="@+id/divider6" android:background="@color/primary_color" android:layout_width="match_parent" android:layout_height="1dp" app:layout_constraintTop_toTopOf="0"/>
+            <ListView android:id="@+id/listView" android:background="@color/secondary_color_variant" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="0dp" android:textFilterEnabled="false" android:dividerHeight="1dp" app:layout_constraintBottom_toTopOf="@+id/divider10" app:layout_constraintTop_toBottomOf="@+id/divider6"/>
+            <View android:id="@+id/divider10" android:background="?android:attr/listDivider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginBottom="10dp" app:layout_constraintBottom_toTopOf="@+id/scanBtn"/>
+            <Button android:id="@+id/scanBtn" android:layout_width="160dp" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/scanBtn" android:onClick="scanConnectedDevices" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintStart_toStartOf="0" style="@style/buttonStyle"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/admob_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0" android:foregroundGravity="center_horizontal">
+            <View android:id="@+id/divider16" android:background="?android:attr/listDivider" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <com.google.android.gms.ads.AdView android:id="@+id/connectedDevicesAdView" android:layout_width="wrap_content" android:layout_height="wrap_content" app:adSize="BANNER" app:adUnitId="ca-app-pub-6362221127909922/5251281580"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

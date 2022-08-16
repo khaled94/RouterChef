@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <include domain="sharedpref" path="prefs.xml"/>
+    <include domain="sharedpref" path="login_cred.xml"/>
+    <include domain="sharedpref" path="pppoe_presets.xml"/>
+</full-backup-content>

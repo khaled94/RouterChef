@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="isp_items">
+        <item>@string/we</item>
+        <item>@string/orange</item>
+        <item>@string/vodafone</item>
+        <item>@string/etisalat</item>
+        <item>@string/others</item>
+    </array>
+    <array name="isp_values">
+        <item>we</item>
+        <item>orange</item>
+        <item>vodafone</item>
+        <item>etisalat</item>
+        <item>Others</item>
+    </array>
+    <array name="language_items">
+        <item>@string/arabic</item>
+        <item>@string/english</item>
+    </array>
+    <array name="language_values">
+        <item>ar</item>
+        <item>en</item>
+    </array>
+    <array name="preloaded_fonts">
+    </array>
+    <array name="router_items">
+        <item>DN8245V</item>
+        <item>DG8045</item>
+        <item>HG8145V5</item>
+        <item>HG8141A5 - Beta</item>
+        <item>HG630V2</item>
+        <item>HG633</item>
+        <item>HG531V1</item>
+        <item>VN020F3</item>
+        <item>VMG3625 New</item>
+        <item>VMG3625 Old</item>
+        <item>ZXHN H188A</item>
+        <item>ZXHN H168N</item>
+        <item>ZXHN H108N</item>
+        <item>TP-Link TD-W9960</item>
+        <item>TP-Link TD-W8968</item>
+        <item>Archer VR300</item>
+        <item>Archer VR400</item>
+        <item>Archer VR600</item>
+        <item>TotoLink ND300</item>
+    </array>
+    <array name="router_values">
+        <item>DN8245V</item>
+        <item>DG8045</item>
+        <item>HG8145V5</item>
+        <item>HG8141A5</item>
+        <item>HG630V2</item>
+        <item>HG633</item>
+        <item>HG531V1</item>
+        <item>VN020F3</item>
+        <item>VMG3625</item>
+        <item>VMG3625_OLD</item>
+        <item>ZTEH188A</item>
+        <item>ZTEH168N</item>
+        <item>ZTEH108N</item>
+        <item>TDW9960</item>
+        <item>TDW8968</item>
+        <item>VR300</item>
+        <item>VR400</item>
+        <item>VR600</item>
+        <item>TotoLink_ND300</item>
+    </array>
+</resources>

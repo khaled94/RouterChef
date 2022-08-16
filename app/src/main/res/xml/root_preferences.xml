@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:title="@string/langSettings">
+        <ListPreference android:entries="@array/language_items" android:title="@string/lang" android:key="language" android:summary="Choose your preferred Language" android:entryValues="@array/language_values"/>
+    </PreferenceCategory>
+    <PreferenceCategory app:title="@string/ispSettings">
+        <ListPreference android:entries="@array/isp_items" android:title="@string/isp" android:key="isp" android:summary="Choose your internet service provider company" android:defaultValue="we" android:entryValues="@array/isp_values"/>
+    </PreferenceCategory>
+    <PreferenceCategory app:title="@string/routerSettings">
+        <ListPreference android:entries="@array/router_items" android:title="@string/routerModel" android:key="router_model" android:summary="Choose your Router Model" android:defaultValue="ZTEH168N" android:entryValues="@array/router_values"/>
+    </PreferenceCategory>
+</PreferenceScreen>
